@@ -1,0 +1,52 @@
+.container {
+    display: flex;
+    align-content: center;
+    column-gap: 1em;
+    justify-content: center;
+    height: 100vh;
+    
+
+}
+.body {
+    height: 100vh;
+}
+.box {
+    width: 25vw;
+    height: 25vh;
+    border-radius: 12px;
+
+}
+#box1{
+    background-color: red;
+    top: 50%;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+}    
+#box2 {
+    background-color: blue;
+    height: 100%;
+    z-index: 2;
+    
+}
+#box3 {
+    background-color: black;
+    top: 60%;
+    position: absolute;
+    right: 30%;
+    z-index: 3;
+}
+#box4 { 
+    background-color: green;
+    width: 100%;
+    z-index: 4;
+    top: 0%;
+    position: absolute;
+}
+@media(max-width: 768px) {
+    .body{ 
+        margin: 0 auto !important;
+        padding: 0 !important;
+    }
+}
+
